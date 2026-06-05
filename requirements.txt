@@ -1,0 +1,27 @@
+# Core deep learning
+torch>=1.12
+torchvision>=0.13
+
+# Medical image I/O
+nibabel
+pydicom
+SimpleITK
+
+# Segmentation / model utilities
+segmentation-models-pytorch
+ml_collections
+
+# Scientific stack
+numpy
+pandas
+scipy
+scikit-image
+scikit-learn
+medpy
+
+# Imaging & visualization
+Pillow
+matplotlib
+
+# Misc
+tqdm
