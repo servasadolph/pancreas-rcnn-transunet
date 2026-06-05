@@ -75,7 +75,7 @@ pancreas-rcnn-transunet/
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/pancreas-rcnn-transunet.git
+git clone https://github.com/servasadolph/pancreas-rcnn-transunet.git
 cd pancreas-rcnn-transunet
 
 python -m venv .venv && source .venv/bin/activate    # or conda
