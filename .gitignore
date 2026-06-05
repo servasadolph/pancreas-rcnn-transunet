@@ -19,6 +19,11 @@ outputs/
 *.nii.gz
 *.npy
 
+# Keep paper figures (README assets)
+!figures/
+!figures/*.png
+!figures/*.pdf
+
 # ── Python ──
 __pycache__/
 *.py[cod]

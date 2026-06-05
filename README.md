@@ -17,6 +17,11 @@ Full 512×512 CT slice  ──►  Stage 1: Faster R-CNN  ──►  predicted b
 - **Stage 1 — Localization:** a COCO-pretrained **Faster R-CNN (ResNet-50 FPN)** is fine-tuned to detect the pancreas and output a bounding box. The box is expanded (×1.5–2.0) and used to crop the ROI.
 - **Stage 2 — Segmentation:** a hybrid **TransUNet** segments the pancreas inside the crop. The model is trained with a **Dice–Hausdorff Distance (DHD) loss** — `L = L_Dice + α·L_surface` — which couples region overlap (Dice) with boundary precision (Hausdorff).
 
+<p align="center">
+  <img src="figures/figure01.png" alt="Overall framework: data preparation, two-stage Faster R-CNN + TransUNet segmentation, and evaluation" width="100%">
+  <br><em>Figure 1. Overall framework — data preparation, two-stage localization + segmentation, and evaluation.</em>
+</p>
+
 ---
 
 ## Results (from the paper)
@@ -35,6 +40,13 @@ Full 512×512 CT slice  ──►  Stage 1: Faster R-CNN  ──►  predicted b
 |---|:---:|:---:|:---:|:---:|
 | Zero-shot (NIH model, no fine-tuning) | 62.96 | 10.51 | 63.64 | 66.44 |
 | Fully automatic (5-fold CV)           | 66.50 | 8.55  | 63.82 | 79.29 |
+
+### Qualitative comparison
+
+<p align="center">
+  <img src="figures/fig6.png" alt="Qualitative comparison of segmentation outputs from each model" width="80%">
+  <br><em>Figure 6. Qualitative comparison of segmentation outputs. Columns: CT image with ground truth (green), then predictions from DHD, DSC, and U-Net.</em>
+</p>
 
 ---
 
