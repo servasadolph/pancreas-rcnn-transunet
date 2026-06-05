@@ -129,13 +129,12 @@ Models were trained on two NVIDIA RTX A4000 GPUs using `torch.nn.DataParallel`.
 
 ## Datasets
 
-This repository contains source code only. The CT datasets must be obtained from their original
-providers, subject to the relevant data-use agreements.
+This repository contains source code only. The CT datasets used in this study are publicly available:
 
 | Dataset | Use | Source |
 |---|---|---|
-| NIH Pancreas-CT | Main training and evaluation | The Cancer Imaging Archive (TCIA) |
-| BTCV (Beyond the Cranial Vault) | Cross-dataset evaluation | Synapse / MICCAI 2015 Multi-Atlas Labeling |
+| NIH Pancreas-CT | Main training and evaluation | [kaggle.com/datasets/tahsin/pancreasct-dataset](https://www.kaggle.com/datasets/tahsin/pancreasct-dataset) (originally from The Cancer Imaging Archive) |
+| BTCV (Beyond the Cranial Vault) | Cross-dataset evaluation | [kaggle.com/datasets/lssz1275/abdomen](https://www.kaggle.com/datasets/lssz1275/abdomen) (MICCAI 2015 Multi-Atlas Labeling) |
 
 Expected layout after download:
 
