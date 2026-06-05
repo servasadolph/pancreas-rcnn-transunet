@@ -122,7 +122,8 @@ python -m venv .venv && source .venv/bin/activate    # or use conda
 pip install -r requirements.txt
 ```
 
-Tested with Python 3.8 and PyTorch (CUDA 11.x).
+Implemented and tested with **PyTorch 2.3.0** (torchvision 0.18.0) on Python 3.8+.
+Models were trained on two NVIDIA RTX A4000 GPUs using `torch.nn.DataParallel`.
 
 ---
 

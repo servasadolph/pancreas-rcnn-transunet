@@ -1,6 +1,6 @@
-# Core deep learning
-torch>=1.12
-torchvision>=0.13
+# Core deep learning (versions used in the paper)
+torch==2.3.0
+torchvision==0.18.0
 
 # Medical image I/O
 nibabel
