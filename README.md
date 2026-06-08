@@ -1,4 +1,10 @@
-<h1 align="center">Pancreas Segmentation with a Two-Stage Pipeline of Faster R-CNN and TransUNet</h1>
+<p align="center">
+  <a href="https://doi.org/10.3390/app16125764">
+    <img src="figures/Article_Banner_MDPI_applsci-16-05764.png" alt="Applied Sciences (MDPI) — Pancreas Segmentation Using a Two-Stage Pipeline of Faster R-CNN and TransUNet" width="100%">
+  </a>
+</p>
+
+<h1 align="center">Pancreas Segmentation Using a Two-Stage Pipeline of Faster R-CNN and TransUNet</h1>
 
 <p align="center">
   A deep learning framework for automatic pancreas segmentation in abdominal CT.
@@ -8,13 +14,9 @@
 
 <p align="center">
   <b>Yunjung Hong</b> &nbsp;·&nbsp; <b>Servas Adolph Tarimo</b> &nbsp;·&nbsp; <b>Jiyoung Woo</b><br>
-  <em>Applied Sciences</em> (MDPI) — to appear
+  <em>Applied Sciences</em> <b>2026</b>, <i>16</i>(12), 5764<br>
+  <a href="https://doi.org/10.3390/app16125764">https://doi.org/10.3390/app16125764</a>
 </p>
-
-<!-- HIDDEN UNTIL OFFICIAL PUBLICATION (reveal by deleting this comment block)
-Manuscript ID: applsci-4222871
-Official article link: <add DOI / URL here>
--->
 
 ---
 
@@ -47,8 +49,6 @@ Full 512x512 CT slice  -->  Stage 1: Faster R-CNN  -->  predicted box  -->  crop
 
 ## Results
 
-<!-- HIDDEN UNTIL OFFICIAL PUBLICATION (reveal by deleting this comment block)
-
 ### NIH Pancreas-CT dataset
 
 | Model | Mean DSC (%) | Std (DSC) | Precision (%) | Recall (%) |
@@ -63,10 +63,6 @@ Full 512x512 CT slice  -->  Stage 1: Faster R-CNN  -->  predicted box  -->  crop
 |---|:---:|:---:|:---:|:---:|
 | Zero-shot (NIH model, no fine-tuning) | 62.96 | 10.51 | 63.64 | 66.44 |
 | Fully automatic (5-fold CV)           | 66.50 | 8.55  | 63.82 | 79.29 |
-
--->
-
-Quantitative results will be added here after the article is officially published.
 
 <p align="center">
   <img src="figures/fig6.png" alt="Qualitative comparison of segmentation outputs from each model" width="80%">
@@ -189,20 +185,19 @@ python evaluate_btcv/btcv_5fold_cv.py         # fully automatic 5-fold cross-val
 
 ## Citation
 
-<!-- HIDDEN UNTIL OFFICIAL PUBLICATION (reveal and complete with the final volume/DOI)
-
 ```bibtex
 @article{hong2026pancreas,
-  title   = {Pancreas Segmentation with a Two-Stage of R-CNN and TransUNet},
-  author  = {Hong, Yunjung and Tarimo, Servas Adolph and Woo, Jiyoung},
-  journal = {Applied Sciences},
-  year    = {2026},
-  publisher = {MDPI}
+  title     = {Pancreas Segmentation Using a Two-Stage Pipeline of Faster R-CNN and TransUNet},
+  author    = {Hong, Yunjung and Tarimo, Servas Adolph and Woo, Jiyoung},
+  journal   = {Applied Sciences},
+  volume    = {16},
+  number    = {12},
+  pages     = {5764},
+  year      = {2026},
+  publisher = {MDPI},
+  doi       = {10.3390/app16125764}
 }
 ```
--->
-
-Citation details will be added once the article is officially published.
 
 ---
 
